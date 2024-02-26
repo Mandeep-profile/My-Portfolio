@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import avatar from "../../Assets/avatar.svg";
 import Navbar from "../Navbar/Navbar";
+import {useSelector} from 'react-redux'
 import "./Contact.scss";
 
 const Contact = () => {
+
+  const isSelectedTheme = useSelector(
+    (state) => state.selectedTheme.isThemeSelected
+  );
+  
   const [contactForm, setContactForm] = useState({
     firstName: "",
     lastName: "",
@@ -39,7 +45,7 @@ const Contact = () => {
         <img src={avatar} className="avatar-img" alt="avatar" />
       </div>
       <div className="contact-form">
-      <h1 className="contact-heading">LET'S BUILD A PROJECT</h1>
+      <h1 className={` contact-heading ${isSelectedTheme ? 'site-light-theme' : 'site-dark-theme'}`}>LET'S BUILD A PROJECT</h1>
       <div className="input-contact-main">
         <div className="input-div">
           <input

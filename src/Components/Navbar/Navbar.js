@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Logo from '../../Assets/Logo.png'
+import Logo from "../../Assets/Logo.png";
 import { useSelector, useDispatch } from "react-redux";
 import { ThemeActions } from "../../store/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,13 +23,13 @@ const NavBar = () => {
 
   const handleDarkMode = () => {
     if (isSelectedTheme) {
-      dispatch(ThemeActions.isDarkTheme()); // Dispatch action for dark theme
+      dispatch(ThemeActions.isDarkTheme());
     }
   };
 
   const handleLightMode = () => {
     if (!isSelectedTheme) {
-      dispatch(ThemeActions.isLightTheme()); // Dispatch action for Light theme
+      dispatch(ThemeActions.isLightTheme());
     }
   };
 
@@ -72,8 +72,20 @@ const NavBar = () => {
           </div>
         ) : (
           <div className="homeNavButtons">
-            <FontAwesomeIcon icon={faMoon} className={`mode-icon`} onClick={handleDarkMode} />
-            <FontAwesomeIcon icon={faSun} className={`mode-icon`} onClick={handleLightMode}/>
+            <FontAwesomeIcon
+              icon={faMoon}
+              className={`mode-icon ${
+                !isSelectedTheme ? "selected-theme-icon" : ""
+              }`}
+              onClick={handleDarkMode}
+            />
+            <FontAwesomeIcon
+              icon={faSun}
+              className={`mode-icon ${
+                isSelectedTheme ? "selected-theme-icon" : ""
+              }`}
+              onClick={handleLightMode}
+            />
             <button
               className="contact-button"
               onClick={() =>
@@ -90,8 +102,16 @@ const NavBar = () => {
       {windowWidth < 1000 && !NavOptions && (
         <div className="homeNavButtons responsiveNavButtons">
           <div className="NavIcons">
-            <FontAwesomeIcon icon={faMoon} className={`mode-icon`} onClick={handleDarkMode}/>
-            <FontAwesomeIcon icon={faSun} className={`mode-icon`} onClick={handleLightMode}/>
+            <FontAwesomeIcon
+              icon={faMoon}
+              className={`mode-icon`}
+              onClick={handleDarkMode}
+            />
+            <FontAwesomeIcon
+              icon={faSun}
+              className={`mode-icon`}
+              onClick={handleLightMode}
+            />
           </div>
           <div>
             <button
