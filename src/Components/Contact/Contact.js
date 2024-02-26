@@ -121,7 +121,7 @@ const Contact = () => {
         </div>
       </div>
       <button
-        className="contact-btn"
+        className={`${!AllFieldsFilled ? "contact-btn" : "contact-disabled-btn" }`}
         disabled={!AllFieldsFilled}
         onClick={handleContactFormSubmit}
       >

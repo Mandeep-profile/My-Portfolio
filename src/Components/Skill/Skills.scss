@@ -1,0 +1,105 @@
+.skills-section {
+  height: 700px;
+  height: auto;
+  padding-bottom: 3rem;
+  .skills-section-div {
+    text-align: center;
+    p {
+      margin-top: 2rem;
+    }
+    h1 {
+      padding-top: 1rem;
+      font-family: "Poppins", sans-serif;
+    }
+    .site-light-theme {
+      color: var(--textBlue);
+    }
+
+    .site-dark-theme {
+      color: var(--darkTheme);
+    }
+    .skills-highlight {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      p {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    marquee {
+      font-size: 32px;
+      color: var(--textBlue);
+    }
+    p {
+      //   color: var(--blue);
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: var(--textBlue);
+    }
+  }
+  .skills-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 3rem;
+    // margin-bottom: 3rem;
+    .skills-icons {
+      width: 75px;
+      height: 75x;
+      border-radius: 20px;
+      p {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        // color: var(--textBlue);
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .skills-section {
+    height: auto;
+    .skills-section-div {
+      .skills-highlight {
+        width: 80%;
+      }
+    }
+    .skills-layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 65% !important;
+      margin: 3rem auto;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+  }
+}
+
+
+@media (max-width: 350px) {
+    .skills-section {
+      height: auto;
+      .skills-section-div {
+        .skills-highlight {
+          width: 80%;
+        }
+      }
+      .skills-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80% !important;
+        margin: 3rem auto;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+    }
+  }

@@ -30,6 +30,7 @@
       align-items: center;
       gap: 1rem;
       margin: 20px auto;
+      font-family: "Nota", sans-serif;
 
       .contact-input,
       .contact-input-sub,
@@ -37,12 +38,14 @@
         width: 400px;
         padding: 1rem;
         border: 1px solid var(--textBlue);
+        font-family: "Nota", sans-serif;
       }
 
       .contact-input-textarea {
         max-width: 850px;
         min-width: 850px;
         height: 150px;
+        font-family: "Nota", sans-serif;
       }
 
       .contact-input-sub {
@@ -64,8 +67,7 @@
       border: 1px solid var(--textBlue);
       width: 150px;
       padding: 1rem;
-
-      /* Center submit button on smaller screens */
+      font-family: "Nota", sans-serif;
       display: flex;
       justify-content: center;
       margin: 0 auto;
