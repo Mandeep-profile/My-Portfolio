@@ -1,0 +1,111 @@
+.home-nav-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    .logo {
+      width: 70px;
+      height: 50px;
+      border-radius: 50px;
+      border: 2px solid var(--textBlue);
+    }
+    .homeNavImageLight {
+      display: flex;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      color: var(--textBlue);
+      cursor: pointer;
+    }
+    .homeNavImageDark {
+      display: flex;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      color: var(--white);
+      cursor: pointer;
+    }
+    .homeNavButtons {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .mode-icon {
+        display: flex;
+        font-size: 26px;
+        cursor: pointer;
+      }
+      .selected-theme-icon {
+        color: var(--textLightBlue);
+      }
+      .mode-icon:hover {
+        color: var(--textLightBlue);
+      }
+      .contact-button {
+        width: 150px;
+        height: 50px;
+        border-width: 2px;
+        border: 2px solid var(--textBlue);
+        color: var(--textBlue);
+        font-weight: 500;
+        background-color: var(--white);
+        font-size: 18px;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .contact-button:hover {
+        background-color: var(--textBlue);
+        color: var(--white);
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .home-nav-main {
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        width: 55px;
+        height: 35px;
+      }
+    }
+    .responsiveNavButtons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 25px auto;
+    }
+    .NavIcons{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .mode-icon {
+      display: flex;
+      font-size: 26px;
+      cursor: pointer;
+    }
+    .selected-theme-icon {
+      color: var(--textLightBlue);
+    }
+    .mode-icon:hover {
+      color: var(--textLightBlue);
+    }
+    .contact-button {
+      width: 120px;
+      height: 40px;
+      border-width: 2px;
+      border: 2px solid var(--textBlue);
+      color: var(--textBlue);
+      font-weight: 500;
+      background-color: var(--white);
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .contact-button:hover {
+      background-color: var(--textBlue);
+      color: var(--white);
+    }
+  }
