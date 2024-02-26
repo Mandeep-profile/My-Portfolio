@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Logo from "../../Assets/Logo.png";
+import Logo from '../../Assets/Logo.png'
 import { useSelector, useDispatch } from "react-redux";
 import { ThemeActions } from "../../store/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +19,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const btnText = location.pathname === "/contact" ? "Close" : "Say Hello";
+  const btnText = location.pathname === "/contact" ? "Close" : "Contact";
 
   const handleDarkMode = () => {
     if (isSelectedTheme) {

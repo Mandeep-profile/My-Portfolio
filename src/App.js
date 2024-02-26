@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./Main";
 import { useSelector } from "react-redux";
-// import Contact from "./Components/Contact/Contact";
+import Contact from "./Components/Contact/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './theme.css'
 
@@ -21,7 +21,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
