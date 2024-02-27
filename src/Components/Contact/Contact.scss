@@ -75,7 +75,11 @@
 
     .contact-disabled-btn {
       font-weight: 400;
-      margin-left: 22rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      // margin-left: 22rem;
       background-color: var(--textBlue);
       border: 1px solid var(--textBlue);
       color: var(--white);
