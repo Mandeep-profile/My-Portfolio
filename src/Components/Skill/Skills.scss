@@ -5,10 +5,9 @@
   .skills-section-div {
     text-align: center;
     p {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     h1 {
-      padding-top: 1rem;
       font-family: "Poppins", sans-serif;
     }
     .site-light-theme {
@@ -83,11 +82,37 @@
   }
 }
 
+@media (max-width: 450px) {
+  .skills-section {
+    height: auto;
+    .skills-section-div {
+      p{
+        font-size: 14px;
+      }
+      .skills-highlight {
+        width: 80%;
+      }
+    }
+    .skills-layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70% !important;
+      margin: 3rem auto;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+  }
+}
+
 
 @media (max-width: 350px) {
     .skills-section {
       height: auto;
       .skills-section-div {
+        p{
+          font-size: 12px;
+        }
         .skills-highlight {
           width: 80%;
         }
