@@ -4,6 +4,24 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
+    .svg-inline--fa{
+      height: 1.25rem;
+      color: var(--textBlue);
+    }
+    .svg-inline--fa-new{
+      height: 1.25rem;
+      color: var(--white);
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+      height: 1.5rem;
+      color: var(--textBlue);
+    }
+    .css-i4bv87-MuiSvgIcon-root-new{
+      color: var(--white);
+    }
+    .moon-logo{
+      color: #000;
+    }
     .logo {
       width: 60px;
       height: 35px;
@@ -38,9 +56,9 @@
       .selected-theme-icon {
         color: var(--textBlue);
       }
-      .mode-icon:hover {
-        color: var(--textBlue);
-      }
+      // .mode-icon:hover {
+      //   color: var(--textBlue);
+      // }
       .contact-button {
         width: 150px;
         height: 50px;
@@ -88,10 +106,10 @@
       cursor: pointer;
     }
     .selected-theme-icon {
-      color: var(--textLightBlue);
+      color: var(--darkTheme);
     }
     .mode-icon:hover {
-      color: var(--textLightBlue);
+      color: var(--textBlue);
     }
     .contact-button {
       width: 120px;

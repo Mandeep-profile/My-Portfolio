@@ -101,9 +101,11 @@
           display: flex;
           flex-wrap: wrap;
           margin-top: 1.5rem;
+          font-size: 14px;
           gap: 0.5rem;
           list-style-type: none;
           margin-left: -40px;
+          font-family: "Poppins", sans-serif;
 
           li {
             display: flex;
@@ -216,10 +218,13 @@
             margin: 20px auto;
           }
           .nexgenImg {
-            width: 70px;
+            width: 120px;
             float: none;
+            display: flex;
+            margin: 0 auto;
           }
           .location {
+            display: none;
             gap: 0rem;
             flex-direction: column;
             float: left;

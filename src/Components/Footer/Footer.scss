@@ -1,0 +1,198 @@
+.footer-section {
+    margin-top: 5rem;
+    height: auto;
+    background-color: var(--textBlue);
+    .footer-section-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem;
+      color: var(--white);
+      background-color: #241d41;
+      margin: 0 auto;
+      width: 80%;
+      border-radius: 20px;
+      border: 1px solid #000;
+      position: relative;
+      bottom: 4rem;
+      font-family: "Poppins", sans-serif;
+      p {
+        width: 40%;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Nota", sans-serif;
+      }
+      .footer-btn {
+        width: 150px;
+        height: 50px;
+        border-width: 2px;
+        border: 3px solid #5be9b9;
+        color: var(--white);
+        font-weight: 500;
+        background-color: #241d41;
+        font-size: 18px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .footer-mid-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 400;
+      align-items: center;
+      margin: 0 auto;
+      color: var(--white);
+      .main-logo {
+        margin-bottom: 10px;
+      }
+      .footer-para {
+        text-align: center;
+      }
+      .logo {
+        width: 70px;
+        height: 50px;
+        border-radius: 50px;
+      }
+      .copyright-line {
+        font-size: 16px;
+        margin: 20px auto;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .social-media-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 75px;
+    }
+    .links {
+      border: 2px solid var(--white);
+      border-radius: 50px;
+      padding: 0.5rem;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .links:hover {
+      border: 2px solid #241d41;
+      color: #000;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .footer-section {
+      .footer-section-div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 60%;
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section {
+      .footer-section-div {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          width: 60%;
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 520px) {
+    .footer-section {
+      .footer-section-div {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+        p {
+          width: 60%;
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+      .footer-mid-section {
+        .footer-para {
+          width: 90%;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .footer-section {
+      .footer-section-div {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+        p {
+          width: 80%;
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 340px) {
+    .footer-section {
+      .footer-section-div {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+        h1 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+        }
+        .footer-btn {
+          width: 125px;
+          height: 40px;
+          font-size: 16px;
+        }
+        .footer-mid-section {
+          .footer-para {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }

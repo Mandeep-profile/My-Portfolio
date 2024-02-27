@@ -63,10 +63,10 @@ const NavBar = () => {
         {windowWidth < 1000 ? (
           <div>
             {location.pathname === "/" && NavOptions ? (
-              <FontAwesomeIcon icon={faBars} onClick={handleNavBar} />
+              <FontAwesomeIcon className={isSelectedTheme ? "svg-inline--fa" : "svg-inline--fa-new"} icon={faBars} onClick={handleNavBar} />
             ) : (
               <span onClick={handleClose}>
-                <ClearIcon onClick={handleNavBar} />
+                <ClearIcon className={isSelectedTheme ? "css-i4bv87-MuiSvgIcon-root" : "css-i4bv87-MuiSvgIcon-root-new"} onClick={handleNavBar} />
               </span>
             )}
           </div>
@@ -75,14 +75,14 @@ const NavBar = () => {
             <FontAwesomeIcon
               icon={faMoon}
               className={`mode-icon ${
-                !isSelectedTheme ? "selected-theme-icon" : ""
+                !isSelectedTheme ? "svg-inline--fa" : "moon-logo"
               }`}
               onClick={handleDarkMode}
             />
             <FontAwesomeIcon
               icon={faSun}
               className={`mode-icon ${
-                isSelectedTheme ? "selected-theme-icon" : ""
+                isSelectedTheme ? "selected-theme-icon" : "css-i4bv87-MuiSvgIcon-root-new"
               }`}
               onClick={handleLightMode}
             />
@@ -104,12 +104,16 @@ const NavBar = () => {
           <div className="NavIcons">
             <FontAwesomeIcon
               icon={faMoon}
-              className={`mode-icon`}
+              className={`mode-icon ${
+                !isSelectedTheme ? "selected-theme-icon" : "mode-icon:hover"
+              }`}
               onClick={handleDarkMode}
             />
             <FontAwesomeIcon
               icon={faSun}
-              className={`mode-icon`}
+              className={`mode-icon ${
+                isSelectedTheme ? "selected-theme-icon" : ""
+              }`}
               onClick={handleLightMode}
             />
           </div>
