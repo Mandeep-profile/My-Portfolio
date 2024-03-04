@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import PDF from "./Components/About/PDF";
 import Skills from "./Components/Skill/Skills";
 import Experience from "./Components/Experience/Experience";
+import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 
 const Main = () => {
@@ -18,6 +19,7 @@ const Main = () => {
           <About showResume={showResume} setShowResume={setShowResume} />
           <Skills />
           <Experience />
+          <Projects />
           <Footer />
         </div>
       ) : (

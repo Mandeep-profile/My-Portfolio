@@ -63,10 +63,23 @@ const NavBar = () => {
         {windowWidth < 1000 ? (
           <div>
             {location.pathname === "/" && NavOptions ? (
-              <FontAwesomeIcon className={isSelectedTheme ? "svg-inline--fa" : "svg-inline--fa-new"} icon={faBars} onClick={handleNavBar} />
+              <FontAwesomeIcon
+                className={
+                  isSelectedTheme ? "svg-inline--fa" : "svg-inline--fa-new"
+                }
+                icon={faBars}
+                onClick={handleNavBar}
+              />
             ) : (
               <span onClick={handleClose}>
-                <ClearIcon className={isSelectedTheme ? "css-i4bv87-MuiSvgIcon-root" : "css-i4bv87-MuiSvgIcon-root-new"} onClick={handleNavBar} />
+                <ClearIcon
+                  className={
+                    isSelectedTheme
+                      ? "css-i4bv87-MuiSvgIcon-root"
+                      : "css-i4bv87-MuiSvgIcon-root-new"
+                  }
+                  onClick={handleNavBar}
+                />
               </span>
             )}
           </div>
@@ -82,7 +95,9 @@ const NavBar = () => {
             <FontAwesomeIcon
               icon={faSun}
               className={`mode-icon ${
-                isSelectedTheme ? "selected-theme-icon" : "css-i4bv87-MuiSvgIcon-root-new"
+                isSelectedTheme
+                  ? "selected-theme-icon"
+                  : "css-i4bv87-MuiSvgIcon-root-new"
               }`}
               onClick={handleLightMode}
             />

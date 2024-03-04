@@ -25,7 +25,6 @@ const Footer = () => {
         <span className="main-logo">
           <img src={Logo} className="logo" alt="logo" />
         </span>
-        {/* <p className="footer-para">Learning and leveling up simultaneously</p> */}
         <div className="social-media-links">
           <a href="https://www.linkedin.com/feed/" target="blank" className="links">
             <LinkedinLogo />
