@@ -72,11 +72,11 @@ const Projects = () => {
                 Lolly App, a cutting-edge video streaming platform akin to
                 YouTube.
               </p>
-              <button className="card-btn" title="Add Website Url Soon" disabled={disableButton ? true : false}>
+              {/* <button className="card-btn" title="Add Website Url Soon" disabled={disableButton ? true : false}>
                 <a href="####" target="_blank" rel="noreferrer">
                   Visit Website
                 </a>
-              </button>
+              </button> */}
             </div>
           )}
         </div>
